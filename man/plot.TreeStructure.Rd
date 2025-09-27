@@ -9,10 +9,22 @@
 \arguments{
 \item{x}{A TreeStructure object}
 
-\item{use_ggtree}{Toggle ggtree or ape plotting behaviour}
+\item{use_ggtree}{Toggle ggtree or ape plotting behavior}
 
 \item{...}{Additional arguments passed to ggtree or ape::plot.phylo}
 }
 \description{
 Plot TreeStructure tree with cluster and partition variables
+}
+\examples{
+
+#tree <- ape::read.tree( system.file('sim.nwk', package = 'treestructure') )
+# you can run the example below before plotting
+#struc <- trestruct( tree )
+
+#because it can take a minute or so to run treestructure, we will load it here
+struc <- readRDS( system.file('struc_plot_example.rds', package='treestructure') )
+#plot treestructure object
+
+suppressWarnings(plot(struc))
 }

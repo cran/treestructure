@@ -1,18 +1,46 @@
 Package: treestructure
 Type: Package
 Title: Detect Population Structure Within Phylogenetic Trees
-Version: 0.1.0
-Date: 2020-01-20
-Author: Erik Volz
-Maintainer: Erik Volz <erik.volz@gmail.com>
-Description: Algorithms for detecting population structure from the history of coalescent events recorded in phylogenetic trees. This method classifies each tip and internal node of a tree into disjoint sets characterized by similar coalescent patterns. The methods are described in Volz, E., Wiuf, C., Grad, Y., Frost, S., Dennis, A., & Didelot, X. (2020) <doi:10.1093/sysbio/syaa009>.
+Version: 0.7.0
+Date: 2025-09-24
+Authors@R: c(person(given = "Erik",
+             family = "Volz",
+             role = c("aut", "cre"),
+             email = "erik.volz@gmail.com",
+             comment = c(ORCID = "0000-0001-6268-8937")),
+      person(given = "Fabricia",
+             family = "F. Nascimento",
+             email = "thednainus@yahoo.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-9426-6835")),
+      person(given = "Vinicius",
+             family = "B. Franceschi",
+             email = "vinibfranc@gmail.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-0006-9337")))
+Description: Algorithms for detecting population structure from the history of 
+    coalescent events recorded in phylogenetic trees. This method classifies each 
+    tip and internal node of a tree into disjoint sets characterized by similar 
+    coalescent patterns.
 License: GPL (>= 2)
-Suggests: ggtree,ggplot2,knitr
-Imports: ape (>= 5.0)
+Suggests: ggtree, ggplot2, knitr, rmarkdown, getopt, bookdown,
+        phangorn, treeio
+Depends: R (>= 4.1.0)
+Imports: ape (>= 5.0), rlang
 LinkingTo: Rcpp
 VignetteBuilder: knitr
-RoxygenNote: 6.1.0
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+URL: https://emvolz-phylodynamics.github.io/treestructure/,
+        https://github.com/emvolz-phylodynamics/treestructure
+BugReports: https://github.com/emvolz-phylodynamics/treestructure/issues
 NeedsCompilation: yes
-Packaged: 2020-02-06 13:41:39 UTC; erikvolz
+Packaged: 2025-09-27 07:46:46 UTC; sofia
+Author: Erik Volz [aut, cre] (ORCID: <https://orcid.org/0000-0001-6268-8937>),
+  Fabricia F. Nascimento [ctb] (ORCID:
+    <https://orcid.org/0000-0001-9426-6835>),
+  Vinicius B. Franceschi [ctb] (ORCID:
+    <https://orcid.org/0000-0002-0006-9337>)
+Maintainer: Erik Volz <erik.volz@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-02-17 15:20:02 UTC
+Date/Publication: 2025-09-27 13:00:02 UTC
